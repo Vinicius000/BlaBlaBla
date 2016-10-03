@@ -38,6 +38,10 @@ namespace TABULEIRO
 
         public void colocarPeca(Peca P, Posicao pos)
         {
+            if (existePeca(pos))
+            {
+                throw new ExcecaoTabuleiro("Já existe uma peça nessa posição!!!");
+            }
             pecas[pos.linha, pos.coluna] = P;
             P.posicao = pos;
         }

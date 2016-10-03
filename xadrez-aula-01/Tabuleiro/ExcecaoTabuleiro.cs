@@ -8,7 +8,9 @@ namespace TABULEIRO
 {
     class ExcecaoTabuleiro : Exception
     {
-        public excecaoTabuleiro(string msg) : base(msg)
-        {}
+        public ExcecaoTabuleiro(String msg) : base(msg)
+        {
+
+        }
     }
 }
