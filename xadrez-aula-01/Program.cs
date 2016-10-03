@@ -10,6 +10,14 @@ namespace xadrez_aula_01
     {
         static void Main(string[] args)
         {
+
+            PosicaoXadrez pos = new PosicaoXadrez('c', 7 );
+
+            Console.WriteLine(pos);
+
+            Console.WriteLine(pos.toPosicao());
+
+            /*
             try
             {
 
@@ -25,6 +33,7 @@ namespace xadrez_aula_01
             {
                 Console.WriteLine(e.Message);
             }
+            */
 
             Console.ReadLine();
         }
