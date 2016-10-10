@@ -45,6 +45,17 @@ namespace TABULEIRO
             pecas[pos.linha, pos.coluna] = P;
             P.posicao = pos;
         }
+
+        public Peca retirarPeca(Posicao pos)
+        {
+            if(peca(pos) == null)
+            {
+                return null;
+            }
+            Peca aux = peca(pos);
+            aux.posicao = null;
+            pecas[pos.linha, pos.coluna] = null;
+        }
         
         public bool posicaoValida(Posicao pos)
         {
